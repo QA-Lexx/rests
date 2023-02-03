@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    runs-on: java -jar artifacts/app-mbank.jar
+    java -jar artifacts/app-mbank.jar
 
     steps:
       - uses: actions/checkout@v2
