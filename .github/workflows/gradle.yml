@@ -25,7 +25,7 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew test
-      - name: Build with Gradle
+      - name: install
         run: java -jar ./artifacts/app-mbank.jar
 
 # Команда `chmod +x gradlew` делает файл gradlew исполняемым в linux. 
