@@ -13,7 +13,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    -jar artifacts/app-mbank.jar
 
     steps:
       - uses: actions/checkout@v2
@@ -29,3 +28,4 @@ jobs:
 
 # Команда `chmod +x gradlew` делает файл gradlew исполняемым в linux. 
 # Команда `./gradlew test` собирает ваш проект и запускает тесты.
+PS F:\Workspace\aqa-codes\api-ci\rest> java -jar artifacts/app-mbank.jar
