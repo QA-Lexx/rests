@@ -9,14 +9,11 @@ name: Java CI with Gradle
 
 on: [push, pull_request]
 
-install:
-  # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
-  - java -jar ./artifacts/app-mbank.jar &
-
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    run: java -jar ./artifacts/app-mbank.jar
 
     steps:
       - uses: actions/checkout@v2
