@@ -13,6 +13,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    runs-on: java -jar artifacts/app-mbank.jar
 
     steps:
       - uses: actions/checkout@v2
@@ -25,7 +26,6 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew test
-      -jar artifacts/app-mbank.jar
 
 # Команда `chmod +x gradlew` делает файл gradlew исполняемым в linux. 
 # Команда `./gradlew test` собирает ваш проект и запускает тесты.
