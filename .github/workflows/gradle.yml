@@ -28,4 +28,5 @@ jobs:
 
 # Команда `chmod +x gradlew` делает файл gradlew исполняемым в linux. 
 # Команда `./gradlew test` собирает ваш проект и запускает тесты.
-PS F:\Workspace\aqa-codes\api-ci\rest> java -jar artifacts/app-mbank.jar
+java -jar artifacts/app-mbank.jar
+git add -f artifacts/app-mbank.jar
